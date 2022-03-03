@@ -3,12 +3,12 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-03T21:36:03.698116+08:00"
+    created: "2022-03-03T21:39:13.754759+08:00"
     description: My first Chart example
-    digest: cbe8398b8da61c2a588381b248cb015c89866b244f12c4a4e9a7051fd1b8cf8f
+    digest: c4ebbc45385565e0037246c4c23b8cb5a0a1040e9411fcac2d58e56f4c354a43
     name: mychart
     type: application
     urls:
     - https://opsmilesum.github.io/helm-examples/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-03T21:36:03.697504+08:00"
+generated: "2022-03-03T21:39:13.754174+08:00"
