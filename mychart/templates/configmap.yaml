@@ -5,3 +5,4 @@ metadata:
 data:
   myvalue: "Hello World, this is my first Chart."
   drink: {{ .Values.favoriateDrink }}
+  salad: {{ .Values.global.salad }}
