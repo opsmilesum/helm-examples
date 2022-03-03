@@ -1,9 +1,9 @@
 ## Target
 - [ ] How to use helm to download images?
-- [ ] Release Management.
+- [x] Release Management.
 - [ ] Common template writing.
-- [ ] File structure.
-- [ ] Structure.
+- [x] File structure.
+- [x] Component Structure.
 
 # helm-examples
 
