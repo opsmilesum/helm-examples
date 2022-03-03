@@ -4,7 +4,7 @@
 - [ ] Common template writing.
 - [x] File structure.
 - [x] Component Structure.
-- [ ] Publish and Download from Chart Repo.
+- [ ] Publish and Download from Char from Repo.
 
 # helm-examples
 
