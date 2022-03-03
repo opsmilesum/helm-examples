@@ -3,12 +3,12 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-03T21:21:20.737851+08:00"
+    created: "2022-03-03T21:29:45.603959+08:00"
     description: A Helm chart for Kubernetes
     digest: feefdc2ab260f1c8daab832025e1a8e2ad471d635a5e66a712329da0446120a4
     name: mychart
     type: application
     urls:
-    - https://opsmilesum.github.io/helm-example/mychart/mychart-0.1.0.tgz
+    - https://opsmilesum.github.io/helm-examples/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-03T21:21:20.73728+08:00"
+generated: "2022-03-03T21:29:45.603285+08:00"
