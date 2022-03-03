@@ -24,7 +24,7 @@ Helm can install local or remote charts. When the chart is installed in Kubernet
 3. Downloading and use existing Charts.
 
 ### File Structure
-<img width="326" alt="image" src="https://user-images.githubusercontent.com/96011359/156502509-3c2ffe4d-061f-4c7f-833e-e7377e8ca933.png">
+<img width="280" alt="image" src="https://user-images.githubusercontent.com/96011359/156502509-3c2ffe4d-061f-4c7f-833e-e7377e8ca933.png">
 * Chart.yaml: meta data of chart, name, version, etc.
 * Values.yaml: values for the template files.
 * Charts: chart dependencies.
