@@ -42,3 +42,19 @@ Template strings will be replaced by the `Values.yaml` during building.
 #### Helm V2
 Tiller has too much power inside of k8s cluster -> sucurity issue.
 <img width="1192" alt="image" src="https://user-images.githubusercontent.com/96011359/156503537-b3743bb5-b7d5-4b24-80c1-74ba22c6abef.png">
+
+### Repository
+Publish Chart to Repo.
+```shell
+helm package mychart/
+helm repo index --url https://opsmilesum.github.io/helm-examples/ .
+git commit -a -m "xxx"
+// Re-deploy the github page. 
+```
+
+Read Chart from Repo.
+```shell
+helm repo add myrepo https://opsmilesum.github.io/helm-examples/
+helm repo list
+helm search repo mychart
+```
