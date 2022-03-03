@@ -3,8 +3,8 @@
 - [x] Release Management.
 - [ ] Common template writing.
 - [x] File structure.
-- [x] Component Structure.
-- [ ] Publish and Download from Char from Repo.
+- [x] Component Archicture.
+- [x] Publish and Download Chart to/from Repo.
 
 # helm-examples
 
