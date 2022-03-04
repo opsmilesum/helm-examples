@@ -1,10 +1,11 @@
 ## Target
+- [ ] Basic concept.
 - [ ] How to use helm to download images?
-- [x] Release Management.
-- [ ] Common template writing.
+- [ ] Release Management.
 - [x] File structure.
-- [x] Component Archicture.
+- [x] Archicture.
 - [x] Publish and Download Chart to/from Repo.
+- [ ] Team's pracitce.
 
 # helm-examples
 
