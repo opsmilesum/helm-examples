@@ -52,9 +52,19 @@ git commit -a -m "xxx"
 // Re-deploy the github page. 
 ```
 
-Read Chart from Repo.
+### Search and Install Chart from Repo.
+Search
 ```shell
 helm repo add myrepo https://opsmilesum.github.io/helm-examples/
 helm repo list
 helm search repo mychart
 ```
+
+Install
+```shell
+helm search repo nginx
+helm install --repo https://charts.bitnami.com/bitnami  mynginx neginx
+kubectl get all
+```
+
+
