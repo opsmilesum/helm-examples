@@ -63,7 +63,7 @@ helm search repo mychart
 Install
 ```shell
 helm search repo nginx
-helm install --repo https://charts.bitnami.com/bitnami  mynginx neginx
+helm install --repo https://charts.bitnami.com/bitnami  mynginx nginx
 kubectl get all
 ```
 
