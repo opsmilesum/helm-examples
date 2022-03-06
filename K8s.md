@@ -24,6 +24,12 @@ kubectl delete service -l app=kubernetes-bootcamp
 kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}'
 ```
 
+> Attention! Node is used in the K8s cluster while NodePort is used in the Node.
+> For example: 
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/96011359/156923977-7a5a384c-2053-4cf5-b462-74c233b49ace.png">
+ 
+
+
 ### Label
 ```shell
 # Set label for a pod
