@@ -7,7 +7,19 @@ Deployment 处于 master 节点上，通过发布 Deployment，master 节点会�
 ```shell
 # log into the container
 kubectl exec -ti $POD_NAME -- bash
+```
 
+### Service
+```shell
 # find the service port
 kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}'
+```
+
+### Label
+```shell
+# Set label for a pod
+kubectl label pods kubernetes-bootcamp-57978f5f5d-5qq62  mylabel=12345
+
+# Query label for a pod
+get pods -l mylabel=12345
 ```
