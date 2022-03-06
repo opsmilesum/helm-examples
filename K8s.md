@@ -11,6 +11,15 @@ kubectl exec -ti $POD_NAME -- bash
 
 ### Service
 ```shell
+# Expose the Service
+kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
+
+# Query Service 
+kubectl get services
+
+# Delete Service
+kubectl delete service -l app=kubernetes-bootcamp
+
 # find the service port
 kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}'
 ```
