@@ -10,6 +10,12 @@ Deployment 处于 master 节点上，通过发布 Deployment，master 节点会�
 kubectl exec -ti $POD_NAME -- bash
 ```
 
+### Pod
+```shell
+# Cat and Edit Pod file
+kubectl edit pod fpos-visibility-6564f7559-bst67 -n fpos-visibility
+```
+
 ### Deploy 
 ```shell
 # get Deploy
