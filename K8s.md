@@ -4,9 +4,19 @@ Deployment 处于 master 节点上，通过发布 Deployment，master 节点会�
 
 
 ## Command
+### Debug
 ```shell
 # log into the container
 kubectl exec -ti $POD_NAME -- bash
+```
+
+### Deploy 
+```shell
+# get Deploy
+kubectl get deplo
+
+# Delete Deploy
+kubectl delete deploy <deploy-name>
 ```
 
 ### Service
