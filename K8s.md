@@ -17,6 +17,9 @@ kubectl get deplo
 
 # Delete Deploy
 kubectl delete deploy <deploy-name>
+
+# Cat and Edit Deploy file
+kubectl edit deployment <deploy> -n <workspace>
 ```
 
 ### Service
