@@ -62,4 +62,10 @@ get pods -l mylabel=12345
 ```shell
 # Show config & context info.
 kubectl config view
+
+# Get all context
+kubectl config get-contexts
+
+# Show current context
+kubectl config current-context
 ```
