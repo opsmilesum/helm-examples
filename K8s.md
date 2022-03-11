@@ -68,4 +68,8 @@ kubectl config get-contexts
 
 # Show current context
 kubectl config current-context
+
+# Update Config by EKS
+aws eks update-kubeconfig help
+aws eks --region us-east-1 update-kubeconfig --name main
 ```
