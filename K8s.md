@@ -57,3 +57,9 @@ kubectl label pods kubernetes-bootcamp-57978f5f5d-5qq62  mylabel=12345
 # Query label for a pod
 get pods -l mylabel=12345
 ```
+
+## Context
+```shell
+# Show config & context info.
+kubectl config view
+```
