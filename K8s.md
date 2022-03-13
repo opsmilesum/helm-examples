@@ -14,6 +14,9 @@ kubectl exec -ti $POD_NAME -- bash
 ```shell
 # Cat and Edit Pod file
 kubectl edit pod fpos-visibility-6564f7559-bst67 -n fpos-visibility
+
+# Describe all pods
+kubectl describe pods
 ```
 
 ### Deploy 
@@ -72,4 +75,7 @@ kubectl config current-context
 # Update Config by EKS
 aws eks update-kubeconfig help
 aws eks --region us-east-1 update-kubeconfig --name main
+
+# Set namespace for current context
+kubectl config set-context --current --namespace=default
 ```
