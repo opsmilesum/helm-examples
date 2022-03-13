@@ -19,7 +19,7 @@ kubectl edit pod fpos-visibility-6564f7559-bst67 -n fpos-visibility
 kubectl describe pods
 ```
 
-### Deploy 
+### Deploy
 ```shell
 # get Deploy
 kubectl get deplo
@@ -29,6 +29,10 @@ kubectl delete deploy <deploy-name>
 
 # Cat and Edit Deploy file
 kubectl edit deployment <deploy> -n <workspace>
+
+# Set new image for a deploy
+kubectl set image deployments/<deploy-name> <app-name>=<image>
+kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
 ```
 
 ### Service
