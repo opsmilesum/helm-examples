@@ -33,6 +33,9 @@ kubectl edit deployment <deploy> -n <workspace>
 # Set new image for a deploy
 kubectl set image deployments/<deploy-name> <app-name>=<image>
 kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+
+# Rollback the deploy: rollback to the last version.
+kubectl rollout rundo deployments/kubernetes-bootcamp
 ```
 
 ### Service
