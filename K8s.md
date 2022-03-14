@@ -13,7 +13,7 @@ kubectl exec -ti $POD_NAME -- bash
 ### Pod
 ```shell
 # Cat and Edit Pod file
-kubectl edit pod fpos-visibility-6564f7559-bst67 -n fpos-visibility
+kubectl edit pod <pod-name-name-suffix>
 
 # Describe all pods
 kubectl describe pods
