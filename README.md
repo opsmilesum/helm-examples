@@ -19,7 +19,7 @@ It provides below features:
 ![image](https://user-images.githubusercontent.com/96011359/156500515-c38fbfe8-4621-4277-8516-956e38739259.png)
 * Chart Repository: chart registry, used for downloading/publishing chart.
 * Helm Client: a command-line client for end users: local chart development, Managing repositories, Managing releases, etc.
-* Chart: a bundle of information necessary to create an instance of a Kubernetes application
+* Chart: a collection of files that describe a related set of Kubernetes resources.
 
 ## Helm Chart
 1. Bundle of YAML files.
