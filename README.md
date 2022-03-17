@@ -4,7 +4,7 @@
 - [ ] Helm chart structure.
 - [ ] Helm chart example.
 - [x] Release Management.
-- [ ] Chart operation(Download/Publish/Install/Uninstall).
+- [ ] Chart Repo.
 - [ ] Team's practice.
 
 ### What is Helm?
