@@ -3,7 +3,7 @@
 - [x] Helm architecture.
 - [ ] Helm chart structure.
 - [ ] Helm chart example.
-- [ ] Release Management.
+- [x] Release Management.
 - [ ] Chart operation(Download/Publish/Install/Uninstall).
 - [ ] Team's practice.
 
