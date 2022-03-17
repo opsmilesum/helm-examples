@@ -42,7 +42,29 @@ It provides below features:
 Template strings will be replaced by the `Values.yaml` during building.
 
 ### Release Management
-Helm can install local or remote charts. When the chart is installed in Kubernetes, a release will be created. Every time the configuration of the chart is updated and helm upgrade is executed, the version number of the release will increase by 1
+Release is an instance of a chart running in a Kubernetes cluster. One chart can often be installed many times into the same cluster. And each time it is installed, a new release is created.
+```shell
+# Create a new release.
+helm install <release-name> <chart>
+helm install mychart-release mychart
+
+# Create a new release.
+helm upgrade <release> <chart>
+helm upgrade mychart-release mychart
+
+# List the release 
+helm ls
+
+# Show history for a release
+helm history <release-name>
+helm history mychart-release
+
+# Rollback
+helm rollback <release-name> <version-number>
+helm rollback mychart-release 2
+```
+
+
 #### Helm V2
 Tiller has too much power inside of k8s cluster -> sucurity issue.
 <img width="1192" alt="image" src="https://user-images.githubusercontent.com/96011359/156503537-b3743bb5-b7d5-4b24-80c1-74ba22c6abef.png">
