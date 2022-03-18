@@ -1,11 +1,11 @@
 ## Overview
 - [x] What is Helm?
 - [x] Helm architecture.
-- [ ] Helm chart structure.
+- [x] Helm chart structure.
 - [ ] Helm chart example.
 - [x] Release Management.
-- [ ] Chart Repo.
-- [ ] Team's practice.
+- [x] Chart Repo.
+- [x] Team's practice.
 
 ### What is Helm?
 Helm is the package manager of Kubernetes, just like apt-get/yum.
@@ -28,6 +28,7 @@ It provides below features:
 
 ### File Structure
 <img width="180" alt="image" src="https://user-images.githubusercontent.com/96011359/156502509-3c2ffe4d-061f-4c7f-833e-e7377e8ca933.png">
+
 * Chart.yaml: meta data of chart, name, version, etc.
 * Values.yaml: values for the template files.
 * Charts: chart dependencies.
@@ -63,7 +64,6 @@ helm history mychart-release
 helm rollback <release-name> <version-number>
 helm rollback mychart-release 2
 ```
-
 
 #### Helm V2
 Tiller has too much power inside of k8s cluster -> sucurity issue.
