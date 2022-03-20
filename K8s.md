@@ -51,6 +51,10 @@ kubectl delete service -l app=kubernetes-bootcamp
 
 # find the service port
 kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}'
+
+# Port-forward
+kubectl port-forward <pod-name> <local-port>:<pod-port>
+kubectl port-forward mongo-75f59d57f4-4nd6q 28015:27017
 ```
 
 > Attention! Node is used in the K8s cluster while NodePort is used in the Node.
