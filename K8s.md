@@ -85,4 +85,5 @@ aws eks --region us-east-1 update-kubeconfig --name main
 
 # Set namespace for current context
 kubectl config set-context --current --namespace=default
+kubectl config set-context my-context --namespace=default
 ```
