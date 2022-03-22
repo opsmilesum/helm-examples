@@ -43,7 +43,7 @@ It provides below features:
 Template strings will be replaced by the `Values.yaml` during building.
 
 ### Release Management
-Release is an instance of a chart running in a Kubernetes cluster. One chart can often be installed many times into the same cluster. And each time it is installed, a new release is created.
+Release is an instance of a chart running in a Kubernetes cluster. One chart can often be installed many times into the same cluster. And each time it is installed/upgraded/rollbacked, a new release is created.
 ```shell
 # Create a new release.
 helm install <release-name> <chart>
