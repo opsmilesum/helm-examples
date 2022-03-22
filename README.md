@@ -15,6 +15,9 @@ It provides below features:
 * Dependency check
 * Easy application distribution
 
+### Why do we need Helm?
+If wit
+
 ## Helm Architecture
 ![image](https://user-images.githubusercontent.com/96011359/156500515-c38fbfe8-4621-4277-8516-956e38739259.png)
 * Chart Repository: chart registry, used for downloading/publishing chart.
