@@ -3,23 +3,23 @@ entries:
   example-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-23T13:21:47.358943+08:00"
+    created: "2022-03-23T13:46:52.244098+08:00"
     description: a example chart
     digest: 01a2781924d071c869b435a4e99fce8db3edee023dbb6f848be38b5aae82ff17
     name: example-chart
     type: application
     urls:
-    - https://opsmilesum.github.io/helm-examples/example-chart-0.1.0.tgz
+    - https://opsmilesum.github.io/helm-helm-kubernetes-examples/example-chart-0.1.0.tgz
     version: 0.1.0
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-23T13:21:47.360024+08:00"
+    created: "2022-03-23T13:46:52.24465+08:00"
     description: My first Chart example
-    digest: c4ebbc45385565e0037246c4c23b8cb5a0a1040e9411fcac2d58e56f4c354a43
+    digest: 596d5c461c460f4a445060c57dfd2b45f8d6ddce0b4fd61b0fc5d7de8b690b53
     name: mychart
     type: application
     urls:
-    - https://opsmilesum.github.io/helm-examples/mychart-0.1.0.tgz
+    - https://opsmilesum.github.io/helm-helm-kubernetes-examples/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-23T13:21:47.358316+08:00"
+generated: "2022-03-23T13:46:52.24323+08:00"
