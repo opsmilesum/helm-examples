@@ -1,9 +1,6 @@
 favoriateDrink: coffee
 
-deploymentDescription: my-first-deployment
-
-mysubchart:
-  dessert: ice cream
+deploymentDescription: my-second-deployment
 
 global:
   salad: saladA

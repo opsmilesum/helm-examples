@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  example-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-03-23T13:21:47.358943+08:00"
+    description: a example chart
+    digest: 01a2781924d071c869b435a4e99fce8db3edee023dbb6f848be38b5aae82ff17
+    name: example-chart
+    type: application
+    urls:
+    - https://opsmilesum.github.io/helm-examples/example-chart-0.1.0.tgz
+    version: 0.1.0
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-03T21:39:13.754759+08:00"
+    created: "2022-03-23T13:21:47.360024+08:00"
     description: My first Chart example
     digest: c4ebbc45385565e0037246c4c23b8cb5a0a1040e9411fcac2d58e56f4c354a43
     name: mychart
@@ -11,4 +22,4 @@ entries:
     urls:
     - https://opsmilesum.github.io/helm-examples/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-03T21:39:13.754174+08:00"
+generated: "2022-03-23T13:21:47.358316+08:00"
