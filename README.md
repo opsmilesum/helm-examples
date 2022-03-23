@@ -1,23 +1,28 @@
-## Target
-- [ ] Basic concept.
-- [x] How to use helm to download images?
-- [ ] Release Management.
-- [x] File structure.
-- [x] Architecture.
-- [x] Publish and Download Chart to/from Repo.
-- [ ] Team's practice.
+## Overview
+- [x] What is Helm?
+- [x] Helm architecture.
+- [x] Helm chart structure.
+- [ ] Helm chart example.
+- [x] Release Management.
+- [x] Chart Repo.
+- [x] Team's practice.
 
-# helm-examples
+### What is Helm?
+Helm is the package manager of Kubernetes, just like apt-get/yum.
+It provides below features:
+* Application packaging
+* Version management
+* Dependency check
+* Easy application distribution
 
-## Architecture
+### Why do we need Helm?
+If wit
+
+## Helm Architecture
 ![image](https://user-images.githubusercontent.com/96011359/156500515-c38fbfe8-4621-4277-8516-956e38739259.png)
-
-## The target of Helm
-1. Wrap the K8s application.
-2. Release management.
-3. dependecny checking.
-
-Helm can install local or remote charts. When the chart is installed in Kubernetes, a release will be created. Every time the configuration of the chart is updated and helm upgrade is executed, the version number of the release will increase by 1
+* Chart Repository: chart registry, used for downloading/publishing chart.
+* Helm Client: a command-line client for end users: local chart development, Managing repositories, Managing releases, etc.
+* Chart: a collection of files that describe a related set of Kubernetes resources.
 
 ## Helm Chart
 1. Bundle of YAML files.
@@ -25,7 +30,8 @@ Helm can install local or remote charts. When the chart is installed in Kubernet
 3. Downloading and use existing Charts.
 
 ### File Structure
-<img width="280" alt="image" src="https://user-images.githubusercontent.com/96011359/156502509-3c2ffe4d-061f-4c7f-833e-e7377e8ca933.png">
+<img width="180" alt="image" src="https://user-images.githubusercontent.com/96011359/156502509-3c2ffe4d-061f-4c7f-833e-e7377e8ca933.png">
+
 * Chart.yaml: meta data of chart, name, version, etc.
 * Values.yaml: values for the template files.
 * Charts: chart dependencies.
@@ -40,6 +46,28 @@ Helm can install local or remote charts. When the chart is installed in Kubernet
 Template strings will be replaced by the `Values.yaml` during building.
 
 ### Release Management
+Release is an instance of a chart running in a Kubernetes cluster. One chart can often be installed many times into the same cluster. And each time it is installed/upgraded/rollbacked, a new release is created.
+```shell
+# Create a new release.
+helm install <release-name> <chart>
+helm install mychart-release mychart
+
+# Create a new release.
+helm upgrade <release> <chart>
+helm upgrade mychart-release mychart
+
+# List the release 
+helm ls
+
+# Show history for a release
+helm history <release-name>
+helm history mychart-release
+
+# Rollback
+helm rollback <release-name> <version-number>
+helm rollback mychart-release 2
+```
+
 #### Helm V2
 Tiller has too much power inside of k8s cluster -> sucurity issue.
 <img width="1192" alt="image" src="https://user-images.githubusercontent.com/96011359/156503537-b3743bb5-b7d5-4b24-80c1-74ba22c6abef.png">
