@@ -85,7 +85,7 @@ git commit -a -m "xxx"
 ### Search and Install Chart from Repo.
 Search
 ```shell
-helm repo add myrepo https://opsmilesum.github.io/helm-helm-kubernetes-examples
+helm repo add myrepo https://opsmilesum.github.io/helm-kubernetes-examples/
 /
 helm repo list
 helm search repo mychart
