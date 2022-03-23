@@ -76,7 +76,7 @@ Tiller has too much power inside of k8s cluster -> sucurity issue.
 Publish Chart to Repo.
 ```shell
 helm package mychart/
-helm repo index --url https://opsmilesum.github.io/helm-helm-kubernetes-examples
+helm repo index --url https://opsmilesum.github.io/helm-kubernetes-examples
 / .
 git commit -a -m "xxx"
 // Re-deploy the github page. 
