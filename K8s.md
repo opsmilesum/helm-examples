@@ -39,6 +39,7 @@ kubectl rollout rundo deployments/kubernetes-bootcamp
 
 # Check deploy status
 kubectl get deployment <deploy-name> -o yaml
+kubectl describe deployment <deploy-name>
 ```
 
 ### Service
