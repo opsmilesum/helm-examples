@@ -36,6 +36,9 @@ kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/
 
 # Rollback the deploy: rollback to the last version.
 kubectl rollout rundo deployments/kubernetes-bootcamp
+
+# Check deploy status
+kubectl get deployment <deploy-name> -o yaml
 ```
 
 ### Service
