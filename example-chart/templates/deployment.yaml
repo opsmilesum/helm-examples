@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment-{{ .Values.nameVersion }}
+  name: example-chart-{{ .Values.nameVersion }}
   labels:
     app: nginx
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:1.21.3
+          image: nginx:1.21.1
           command: ["nginx"]
           args: ["-v"]

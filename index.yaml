@@ -3,9 +3,9 @@ entries:
   example-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-23T13:57:04.773659+08:00"
+    created: "2022-03-24T13:08:30.050537+08:00"
     description: a example chart
-    digest: 01a2781924d071c869b435a4e99fce8db3edee023dbb6f848be38b5aae82ff17
+    digest: 1729805617869fcdb4c5e9b0943ed875dd620fe838a8fd418c1e116035a8f7b4
     name: example-chart
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-23T13:57:04.77472+08:00"
+    created: "2022-03-24T13:08:30.051111+08:00"
     description: My first Chart example
     digest: 596d5c461c460f4a445060c57dfd2b45f8d6ddce0b4fd61b0fc5d7de8b690b53
     name: mychart
@@ -22,4 +22,4 @@ entries:
     urls:
     - https://opsmilesum.github.io/helm-kubernetes-examples/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-23T13:57:04.772444+08:00"
+generated: "2022-03-24T13:08:30.049718+08:00"
